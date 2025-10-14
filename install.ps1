@@ -1,3 +1,6 @@
+[Console]::OutputEncoding = [Text.Encoding]::UTF8
+chcp 65001
+
 # 관리자 권한 체크 및 자동 승격
 if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
     Write-Host "관리자 권한이 필요합니다. 관리자 권한으로 실행합니다..."
@@ -34,7 +37,7 @@ choco install git -y
 choco -v
 
 # 설치된 패키지 목록만 확인
-choco list --localonly
+choco list
 
 Write-Host "`n스크립트가 완료되었습니다. 설치된 프로그램을 확인하세요."
 pause
