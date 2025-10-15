@@ -36,6 +36,8 @@ choco install git -y
 # 도커 설치
 # choco install docker-desktop -y
 
+choco install googlechrome -y
+choco install chrome-remote-desktop-chrome -y
 
 # Chocolatey 버전 확인
 choco -v
