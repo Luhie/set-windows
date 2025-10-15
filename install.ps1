@@ -35,6 +35,7 @@ choco install git -y
 
 #mysql
 choco install mysql -y
+choco install heidisql
 
 # 도커 설치
 # choco install docker-desktop -y
