@@ -33,6 +33,9 @@ choco install python3 -y
 # Git 설치
 choco install git -y
 
+#mysql
+choco install mysql -y
+
 # 도커 설치
 # choco install docker-desktop -y
 
