@@ -22,7 +22,7 @@ choco upgrade chocolatey -y
 choco install firacode hackfont -y
 
 # Python3 설치
-choco install python313 --version=3.13.7
+choco install python313 --version=3.13.7 -y
 
 # PHP 설치 (필요 시 주석 해제)
 # choco install php --version=8.4.8 -y
@@ -35,8 +35,9 @@ choco install git -y
 
 #mysql
 choco install mysql -y
-choco install heidisql
+choco install heidisql -y
 
+choco install filezilla -y
 # 도커 설치
 # choco install docker-desktop -y
 
